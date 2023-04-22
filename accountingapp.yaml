@@ -22,4 +22,4 @@ dependencies:
       - python-dateutil==2.8.2
       - six==1.16.0
       - tkcalendar==1.6.1
-prefix: /Users/kimngan/miniconda3/envs/accountingapp
+
