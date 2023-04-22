@@ -1,0 +1,25 @@
+name: accountingapp
+channels:
+  - defaults
+dependencies:
+  - ca-certificates=2023.01.10
+  - libcxx=14.0.6
+  - libffi=3.4.2
+  - ncurses=6.4
+  - openssl=1.1.1t
+  - pip=23.0.1
+  - python=3.9.16
+  - readline=8.2
+  - setuptools=66.0.0
+  - sqlite=3.41.2
+  - tk=8.6.12
+  - tzdata=2023c
+  - wheel=0.38.4
+  - xz=5.2.10
+  - zlib=1.2.13
+  - pip:
+      - babel==2.12.1
+      - python-dateutil==2.8.2
+      - six==1.16.0
+      - tkcalendar==1.6.1
+prefix: /Users/kimngan/miniconda3/envs/accountingapp
