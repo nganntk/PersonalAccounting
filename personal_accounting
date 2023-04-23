@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+import personal_accounting
+
+if __name__ == "__main__":
+    personal_accounting.run()

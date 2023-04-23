@@ -547,11 +547,19 @@ class config:
     DATABASE_FILE = os.path.join(DATA_DIR, 'expense.db')
 
     # Default accounts
-    ACCOUNTS = ['Bank', 'Paylah', 'GrabPay', 'ShopeePay', 'Cash', 'DBS Credit Card']
-    CATEGORIES = ['Eat out', 'Groceries', 'Transport', 'Others']
+    ACCOUNTS = [('Bank',), 
+                ('Paylah',), 
+                ('GrabPay',), 
+                ('ShopeePay',), 
+                ('Cash',), 
+                ('DBS Credit Card',)]
+    CATEGORIES = [('Eat out',), ('Groceries',), ('Transport',), ('Others',)]
 
 
-if __name__ == '__main__':
+def run():
+    """
+    Run the application
+    """
     # Create the data directory if it doesn't exist
     os.makedirs(os.path.join(os.path.dirname(__file__), 'data'), exist_ok=True)
         
@@ -560,3 +568,7 @@ if __name__ == '__main__':
     root.title('Personal Accounting App')
     app = PersonalAccountingApp(root)
     root.mainloop()
+
+
+if __name__ == '__main__':
+    run()
